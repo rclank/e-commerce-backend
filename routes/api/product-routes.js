@@ -13,7 +13,8 @@ router.get('/', (req, res) => {
         model: Category
       },
       {
-        model: Tag
+        model: Tag,
+        through: ProductTag
       }
     ]
   })
